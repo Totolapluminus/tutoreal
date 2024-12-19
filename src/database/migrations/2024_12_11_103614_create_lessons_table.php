@@ -17,8 +17,8 @@ return new class extends Migration
             $table->foreignIdFor(Course::class)->constrained()->cascadeOnDelete();
             $table->string('title');
             $table->string('description')->nullable();
-            $table->string('file');
-            $table->string('content');
+            $table->string('video')->nullable();
+            $table->string('material')->nullable();
             $table->timestamps();
         });
     }

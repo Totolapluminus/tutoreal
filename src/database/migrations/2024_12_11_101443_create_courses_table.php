@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('description');
-            $table->string('preview_image');
-            $table->boolean('is_published');
-            $table->boolean('is_premium');
+            $table->text('description')->nullable();
+            $table->string('preview_image')->nullable();
+            $table->boolean('is_published')->default('false');
+            $table->boolean('is_premium')->default('false');
             $table->timestamps();
         });
     }

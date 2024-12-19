@@ -146,18 +146,10 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <li class="nav-item">
-                            <a href="pages/gallery.html" class="nav-link">
+                            <a href="{{route('courses.index')}}" class="nav-link">
                                 <i class="nav-icon fas fa-clipboard-list"></i>
                                 <p>
                                     Курсы
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/gallery.html" class="nav-link">
-                                <i class="nav-icon fas fa-photo-video"></i>
-                                <p>
-                                    Уроки
                                 </p>
                             </a>
                         </li>
@@ -166,14 +158,6 @@
                                 <i class="nav-icon fas fa-graduation-cap"></i>
                                 <p>
                                     Темы
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/gallery.html" class="nav-link">
-                                <i class="nav-icon fas fa-comments"></i>
-                                <p>
-                                    Отзывы
                                 </p>
                             </a>
                         </li>
