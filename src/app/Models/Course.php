@@ -26,4 +26,8 @@ class Course extends Model
     public function topics() : BelongsToMany{
         return $this->belongsToMany(Topic::class);
     }
+
+    public function getImageUrlAttribute(){
+        return url('storage/' . $this->preview_image);
+    }
 }

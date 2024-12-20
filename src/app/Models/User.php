@@ -10,8 +10,6 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable;
-
     const GENDER_MALE = 1;
     const GENDER_FEMALE = 2;
 
